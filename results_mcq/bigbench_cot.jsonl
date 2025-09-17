@@ -1,0 +1,50 @@
+[
+    {
+        "question": "In what follows, we provide short narratives, each of which illustrates a common proverb. \nNarrative: Tim had just turned five years old and was the happiest kid you'd have ever met. That was until Alec, his little brother came along. With every passing day Alec got more and more attention, more love, more toys, and he rubbed Tim's face in it. That was until one day Tim had enough and told Alec that just because he was Mom and Dad's new favorite child that it didn't mean he no longer mattered.\nThis narrative is a good illustration of the following proverb:",
+        "answer": "C",
+        "subset": "abstract_narrative_understanding",
+        "idx": 0,
+        "orig_num_choices": 5,
+        "label_A": "It's better to light a candle than to curse the darkness",
+        "label_B": "Great oaks from little acorns grow",
+        "label_C": "A cat may look at a king",
+        "label_D": "You are never too old to learn",
+        "generated_text": "<think>\nOkay, let's see. The question is about matching a narrative to a proverb. The narrative is about Tim, who feels overlooked after his brother Alec is born. Tim gets upset because he feels like he's not getting as much attention anymore. Then he tells Alec that just because Alec is the new favorite, it doesn't mean Tim doesn't matter.\n\nSo, I need to figure out which proverb this illustrates. The answer choices are A, B, C, D. Let me think about each one.\n\nOption A: \"It's better to light a candle than to curse the darkness.\" That one is about taking positive action instead of just complaining. But in the story, Tim is expressing his feelings rather than taking action. Not sure if this fits.\n\nOption B: \"Great oaks from little acorns grow.\" This is about how big things start small. But the story isn't about growth over time or something starting small. It's more about Tim standing up for himself. So maybe not B.\n\nOption C: \"A cat may look at a king.\" This means that everyone has the right to their opinion or to express themselves, regardless of status. In the story, Tim is asserting his feelings to his brother, who might be seen as the \"new favorite.\" So Tim is saying that even though Alec is the new favorite, Tim still matters. That seems to fit. The proverb suggests that even someone of lower status (the cat) can look at someone of high status (the king), implying that everyone has some level of right or dignity.\n\nOption D: \"You are never too old to learn.\" This is about learning at any age. The story is about a child standing up for himself, not about learning something new. So D doesn't fit.\n\nSo the best fit seems to be option C. Tim is asserting his worth despite feeling overshadowed by his brother. The proverb \"A cat may look at a king\" is about asserting one's right to be heard or respected, regardless of perceived status. In the narrative, Tim is the one who feels like he's been demoted (from being the only child to having a brother who gets more attention), and he tells Alec that he still matters. This aligns with the idea that even someone who feels less important (Tim) can express their feelings to someone they perceive as more favored (Alec), just like the cat looking at the king.\n</think>\n\nC",
+        "prediction": "C",
+        "is_correct": true,
+        "output_tkn": 494,
+        "repredicted": false
+    },
+    {
+        "question": "In what follows, we provide short narratives, each of which illustrates a common proverb. \nNarrative: Kelly was changing her tire on the side of the road. This is the third time this month she has popped a tire. She was already late for work and had a horrible headache. \"How does this keep happening to me?\" she thought. Soon after, a car came across the median and struck her in the side. She had to be flown out in a helicopter, and suffered major injuries.\nThis narrative is a good illustration of the following proverb:",
+        "answer": "C",
+        "subset": "abstract_narrative_understanding",
+        "idx": 1,
+        "orig_num_choices": 5,
+        "label_A": "That which does not kill us makes us stronger",
+        "label_B": "Look before you leap",
+        "label_C": "For want of a nail the shoe was lost; for want of a shoe the horse was lost; and for want of a horse the man was lost",
+        "label_D": "It's the squeaky wheel that gets the grease",
+        "generated_text": "<think>\nOkay, let's see. The question is asking which proverb the given narrative illustrates. The narrative is about Kelly who keeps having tire problems, is already late and has a headache, and then gets hit by a car, leading to major injuries.\n\nFirst, I need to recall each of the answer choices. Let's go through them one by one.\n\nOption A: \"That which does not kill us makes us stronger.\" This is usually about overcoming hardships to become stronger. But in Kelly's case, the events seem to be piling up negatively, not leading to her becoming stronger. So maybe not A.\n\nOption B: \"Look before you leap.\" This is about being cautious before taking action. The story doesn't mention Kelly making a hasty decision or leaping into something without looking. She was changing a tire, which is a reactive situation, not a leap. So B might not fit.\n\nOption C: \"For want of a nail the shoe was lost...\" This is about how small problems can lead to bigger ones. The proverb is about a chain of events starting from a small issue. In the narrative, Kelly's repeated tire problems (small issues) lead to a major accident. The tire issues could be the \"nail\" leading to the \"shoe\" (tire), then the \"horse\" (her being stranded), and ultimately the accident. So C seems plausible.\n\nOption D: \"It's the squeaky wheel that gets the grease.\" This means that those who complain or make their needs known are more likely to get help. The narrative doesn't mention Kelly complaining or getting help because of it. She was hit by a car, not receiving assistance. So D doesn't fit.\n\nSo the best fit is probably C. The chain of events starting from the tire issues leading to worse outcomes matches the proverb about the nail leading to the loss of the shoe, horse, etc.\n</think>\n\nC",
+        "prediction": "C",
+        "is_correct": true,
+        "output_tkn": 390,
+        "repredicted": false
+    },
+    {
+        "question": "In what follows, we provide short narratives, each of which illustrates a common proverb. \nNarrative: Jim and Brian were playing with their blocks one afternoon. Brian's Mom Cindy walked in to see how the kids were doing and she was shocked at how much more realistic the fort that Brian built was compared to the fort Jim had built. Brian is doing the best he can with the blocks he has, Cindy told Jim's mom, while Jim just seems to not care what he does with the blocks.\nThis narrative is a good illustration of the following proverb:",
+        "answer": "D",
+        "subset": "abstract_narrative_understanding",
+        "idx": 2,
+        "orig_num_choices": 5,
+        "label_A": "You are never too old to learn",
+        "label_B": "What can't be cured must be endured",
+        "label_C": "Seeing is believing",
+        "label_D": "Life is what you make it",
+        "generated_text": "<think>\nOkay, let's see. The question is about identifying the correct proverb that matches the given narrative. The narrative is about Jim and Brian building forts with blocks. Brian's fort is more realistic and he's putting in effort, while Jim doesn't seem to care. The mom comments that Brian is doing the best he can with the blocks he has, implying that he's making the most of what he has.\n\nLooking at the answer choices:\n\nA: You are never too old to learn – This seems about learning at any age, not directly related to effort or making the most of resources.\n\nB: What can't be cured must be endured – This is about accepting things you can't change. The narrative isn't about enduring something but about effort and approach.\n\nC: Seeing is believing – This would be relevant if someone didn't believe until they saw, but the story is about the difference in their approaches to building.\n\nD: Life is what you make it – This suggests that your attitude and effort determine your outcomes. Brian is putting effort into making the best of his blocks, while Jim doesn't care. The proverb fits because Brian's approach shows he's making his life (or in this case, his fort) better through effort, whereas Jim isn't. \n\nSo the correct answer is D.\n</think>\n\nD",
+        "prediction": "D",
+        "is_correct": true,
+        "output_tkn": 267,
+        "repredicted": false
+    }
+]
