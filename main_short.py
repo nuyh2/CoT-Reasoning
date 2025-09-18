@@ -98,7 +98,7 @@ def main(
 
     # build_inputs는 (input_list, answer_labels, ds, rows) 반환 
     _, _, dataset, rows = adapter.build_inputs(
-        limit=limit, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+        limit=limit, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
     )
 
     # Short Answer 프롬프트 생성 

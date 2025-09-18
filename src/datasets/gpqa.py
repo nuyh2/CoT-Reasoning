@@ -33,12 +33,12 @@ class GPQADataset:
         seed: int = 42,
         show_tqdm: bool = True,
         allow_think_tags: bool = True,
-        include_rows: bool = False,   # ← 추가: 기존 outputs 스키마를 같이 생성/반환
+        include_rows: bool = False,   
     ) -> Tuple[
-        List[List[dict]],            # input_list (chat messages)
-        List[str],                   # answer_labels (A..D)
-        Dataset,                     # raw dataset
-        Optional[List[Dict[str, Any]]]  # rows(outputs 초기값) - include_rows=True일 때만
+        List[List[dict]],           
+        List[str],                   
+        Dataset,                     
+        Optional[List[Dict[str, Any]]]  
     ]:
         ds = self._ds or self.load()
         if limit is not None:
@@ -78,7 +78,6 @@ class GPQADataset:
             gold_label = labels[choices.index(gold_text)]
             answer_labels.append(gold_label)
 
-            # (옵션) 기존 코드 호환용 outputs row 생성
             if include_rows:
                 row = {
                     "question": q,
@@ -86,7 +85,7 @@ class GPQADataset:
                     "label_B": choices[1],
                     "label_C": choices[2],
                     "label_D": choices[3],
-                    "answer": gold_label,  # ← 기존 코드 동일 키
+                    "answer": gold_label,
                     "Subdomain": ds[i]["Subdomain"],
                     "High-level domain": ds[i]["High-level domain"],
                 }

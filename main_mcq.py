@@ -75,35 +75,35 @@ def main(
     if dataset_name == 'arc':
         adapter = ARCDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
         )
 
     #Bigbench
     elif dataset_name == "bigbench":
         adapter = BigBenchDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
         )
 
     # commonsense
     elif dataset_name == "commonsense":
         adapter = CommonsenseQADataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
         )
 
     # # musr
     elif dataset_name == "musr":
         adapter = MuSRMurderMysteriesBinaryDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
         )
 
     else :
         # GPQA - default
         adapter = GPQADataset(split="train")  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot=prompt_cot, seed=42, show_tqdm=True, include_rows=True
         )
 
     # 모델 생성 및 결과물 저장

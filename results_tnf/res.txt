@@ -1,0 +1,72 @@
+
+=== TNF(arc) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 7
+Accuracy:0.7000
+Avg output tokens (TKN): 297.50
+Results(json): results_tnf/arc_da.jsonl
+--------------------------------------------------
+
+=== TNF(arc) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 7
+Accuracy:0.7000
+Avg output tokens (TKN): 312.90
+Results(json): results_tnf/arc_cot.jsonl
+--------------------------------------------------
+
+=== TNF(bigbench) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 7
+Accuracy:0.7000
+Avg output tokens (TKN): 225.10
+Results(json): results_tnf/bigbench_da.jsonl
+--------------------------------------------------
+
+=== TNF(bigbench) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 9
+Accuracy:0.9000
+Avg output tokens (TKN): 369.50
+Results(json): results_tnf/bigbench_cot.jsonl
+--------------------------------------------------
+
+=== TNF(commonsense) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 6
+Accuracy:0.6000
+Avg output tokens (TKN): 250.40
+Results(json): results_tnf/commonsense_da.jsonl
+--------------------------------------------------
+
+=== TNF(commonsense) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 7
+Accuracy:0.7000
+Avg output tokens (TKN): 265.90
+Results(json): results_tnf/commonsense_cot.jsonl
+--------------------------------------------------
+
+=== TNF(musr) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 6
+Accuracy:0.6000
+Avg output tokens (TKN): 785.30
+Results(json): results_tnf/musr_da.jsonl
+--------------------------------------------------
+
+=== TNF(musr) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: True
+Total:   10
+Correct: 6
+Accuracy:0.6000
+Avg output tokens (TKN): 669.10
+Results(json): results_tnf/musr_cot.jsonl
+--------------------------------------------------
