@@ -137,7 +137,7 @@ def build_tnf_inputs(
             user += (
                 " Let's think step by step.\n"
                 "After reasoning, output 'True' or 'False' on the last line, between '<' and '>'. "
-                "Output format example: <True>\n\n"
+                "Output format example: <Answer>\n\n"
             )
         else:
             user += (

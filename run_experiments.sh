@@ -5,7 +5,7 @@ QUANT="awq"
 
 # main code (answer format 3가지)
 # MAINS=("main_mcq.py" "main_short.py" "main_tnf.py")
-MAINS=("main_tnf.py")
+MAINS=("main_mcq.py")
 
 
 # dataset
@@ -15,14 +15,14 @@ DATASETS=("gpqa" "arc" "bigbench" "commonsense" "musr")
 PROMPTS=("da" "cot")
 
 # result directories
-mkdir -p results_mcq results_short results_tnf
+mkdir -p results_mcq2 results_short results_tnf
 
 for MAIN in "${MAINS[@]}"; do
   for DATA in "${DATASETS[@]}"; do
     for PROMPT in "${PROMPTS[@]}"; do
 
       if [[ $MAIN == "main_mcq.py" ]]; then
-        OUTDIR="results_mcq"
+        OUTDIR="results_mcq2"
       elif [[ $MAIN == "main_short.py" ]]; then
         OUTDIR="results_short"
       else

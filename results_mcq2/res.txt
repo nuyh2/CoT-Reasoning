@@ -1,0 +1,39 @@
+
+=== ShortAnswer(gpqa) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 4Accuracy:0.4000Avg output tokens (TKN): 1738.90Results(jsonl): results_mcq2/gpqa_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(gpqa) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 2Accuracy:0.2000Avg output tokens (TKN): 1647.20Results(jsonl): results_mcq2/gpqa_cot.jsonl--------------------------------------------------
+
+=== ShortAnswer(arc) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 309.30Results(jsonl): results_mcq2/arc_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(gpqa) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 4Accuracy:0.4000Avg output tokens (TKN): 1708.20Results(jsonl): results_mcq2/gpqa_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(gpqa) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 1Accuracy:0.1000Avg output tokens (TKN): 1671.00Results(jsonl): results_mcq2/gpqa_cot.jsonl--------------------------------------------------
+
+=== ShortAnswer(arc) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 309.30Results(jsonl): results_mcq2/arc_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(arc) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 4Accuracy:0.4000Avg output tokens (TKN): 419.80Results(jsonl): results_mcq2/arc_cot.jsonl--------------------------------------------------
+
+=== ShortAnswer(bigbench) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 443.50Results(jsonl): results_mcq2/bigbench_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(bigbench) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 8Accuracy:0.8000Avg output tokens (TKN): 507.00Results(jsonl): results_mcq2/bigbench_cot.jsonl--------------------------------------------------
+
+=== ShortAnswer(commonsense) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 9Accuracy:0.9000Avg output tokens (TKN): 246.90Results(jsonl): results_mcq2/commonsense_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(commonsense) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 6Accuracy:0.6000Avg output tokens (TKN): 320.70Results(jsonl): results_mcq2/commonsense_cot.jsonl--------------------------------------------------
+
+=== ShortAnswer(musr) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 7Accuracy:0.7000Avg output tokens (TKN): 833.40Results(jsonl): results_mcq2/musr_da.jsonl--------------------------------------------------
+
+=== ShortAnswer(musr) with Qwen/Qwen3-32B-AWQ ===
+Reasoning mode: TrueTotal:   10Correct: 2Accuracy:0.2000Avg output tokens (TKN): 1095.30Results(jsonl): results_mcq2/musr_cot.jsonl--------------------------------------------------
