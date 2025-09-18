@@ -56,7 +56,7 @@ def main(
     max_tokens: int = 2048,
     dataset_name: str = "gpqa",  
     split: str = "train",
-    limit: int = 3,
+    limit: int = 10,
     prompt_cot: str = "da",    
 ):
     print(f"CUDA visible devices: {os.environ.get('CUDA_VISIBLE_DEVICES','(not set)')}")
@@ -155,6 +155,19 @@ def main(
     print(f"Accuracy:{acc:.4f}")
     print(f"Avg output tokens (TKN): {avg_tkn:.2f}")
     print(f"Results(json): {output_file}")
+
+    log_dir = "results_short"
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, "res.txt")
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(f"\n=== ShortAnswer({dataset_name}) with {base_model_id} ===\n")
+        f.write(f"Reasoning mode: {reasoning}\n")
+        f.write(f"Total:   {total}\n")
+        f.write(f"Correct: {correct}\n")
+        f.write(f"Accuracy:{acc:.4f}\n")
+        f.write(f"Avg output tokens (TKN): {avg_tkn:.2f}\n")
+        f.write(f"Results(json): {output_file}\n")
+        f.write("-" * 50 + "\n")
 
 
 if __name__ == "__main__":

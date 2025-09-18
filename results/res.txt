@@ -1,0 +1,20 @@
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 4Accuracy:0.4000Avg output tokens (TKN): 1639.50Results(jsonl): results_mcq/gpqa_da.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 3Accuracy:0.3000Avg output tokens (TKN): 1783.50Results(jsonl): results_mcq/gpqa_cot.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 309.30Results(jsonl): results_mcq/arc_da.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 309.30Results(jsonl): results_mcq/arc_cot.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 465.30Results(jsonl): results_mcq/bigbench_da.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 10Accuracy:1.0000Avg output tokens (TKN): 448.70Results(jsonl): results_mcq/bigbench_cot.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 9Accuracy:0.9000Avg output tokens (TKN): 268.20Results(jsonl): results_mcq/commonsense_da.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 9Accuracy:0.9000Avg output tokens (TKN): 248.90Results(jsonl): results_mcq/commonsense_cot.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 7Accuracy:0.7000Avg output tokens (TKN): 938.30Results(jsonl): results_mcq/musr_da.jsonl--------------------------------------------------
+
+=== GPQA(train) with Qwen/Qwen3-32B-AWQ ===Reasoning mode: TrueTotal:   10Correct: 6Accuracy:0.6000Avg output tokens (TKN): 1010.20Results(jsonl): results_mcq/musr_cot.jsonl--------------------------------------------------

@@ -75,35 +75,35 @@ def main(
     if dataset_name == 'arc':
         adapter = ARCDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     #Bigbench
     elif dataset_name == "bigbench":
         adapter = BigBenchDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     # commonsense
     elif dataset_name == "commonsense":
         adapter = CommonsenseQADataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     # # musr
     elif dataset_name == "musr":
         adapter = MuSRMurderMysteriesBinaryDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     else :
         # GPQA - default
         adapter = GPQADataset(split="train")  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     # 모델 생성 및 결과물 저장
@@ -144,12 +144,12 @@ def main(
     print(f"Avg output tokens (TKN): {avg_tkn:.2f}")
     print(f"Results(jsonl): {output_file}")
 
-    log_dir = "results"
+    log_dir = "results_mcq"
     os.makedirs(log_dir, exist_ok=True)
     log_path = os.path.join(log_dir, "res.txt")
 
     with open(log_path, "a", encoding="utf-8") as f:
-        f.write(f"\n=== GPQA(train) with {base_model_id} ===")
+        f.write(f"\n=== ShortAnswer({dataset_name}) with {base_model_id} ===\n")
         f.write(f"Reasoning mode: {reasoning}")
         f.write(f"Total:   {total}")
         f.write(f"Correct: {correct}")

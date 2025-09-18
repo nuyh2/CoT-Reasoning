@@ -4,7 +4,9 @@ MODEL="Qwen/Qwen3-32B-AWQ"
 QUANT="awq"
 
 # main code (answer format 3가지)
-MAINS=("main_mcq.py" "main_short.py" "main_tnf.py")
+# MAINS=("main_mcq.py" "main_short.py" "main_tnf.py")
+MAINS=("main_tnf.py")
+
 
 # dataset
 DATASETS=("gpqa" "arc" "bigbench" "commonsense" "musr")

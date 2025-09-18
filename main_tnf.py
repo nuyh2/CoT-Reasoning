@@ -74,35 +74,35 @@ def main(
     if dataset_name == 'arc':
         adapter = ARCDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     #Bigbench
     elif dataset_name == "bigbench":
         adapter = BigBenchDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     # commonsense
     elif dataset_name == "commonsense":
         adapter = CommonsenseQADataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     # # musr
     elif dataset_name == "musr":
         adapter = MuSRMurderMysteriesBinaryDataset()  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
     else :
         # GPQA - default
         adapter = GPQADataset(split="train")  
         input_list, answer_labels, dataset, outputs = adapter.build_inputs(
-            limit=3, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
+            limit=10, prompt_cot="da", seed=42, show_tqdm=True, include_rows=True
         )
 
 
@@ -152,6 +152,20 @@ def main(
     print(f"Accuracy:{accuracy:.4f}")
     print(f"Avg output tokens (TKN): {avg_tkn:.2f}")
     print(f"Results(jsonl): {output_file}")
+
+    # res.txt
+    log_dir = "results_tnf"
+    os.makedirs(log_dir, exist_ok=True)
+    log_path = os.path.join(log_dir, "res.txt")
+    with open(log_path, "a", encoding="utf-8") as f:
+        f.write(f"\n=== TNF({dataset_name}) with {base_model_id} ===\n")
+        f.write(f"Reasoning mode: {reasoning}\n")
+        f.write(f"Total:   {total}\n")
+        f.write(f"Correct: {correct}\n")
+        f.write(f"Accuracy:{accuracy:.4f}\n")
+        f.write(f"Avg output tokens (TKN): {avg_tkn:.2f}\n")
+        f.write(f"Results(json): {output_file}\n")
+        f.write("-" * 50 + "\n")
 
 
 if __name__ == "__main__":
